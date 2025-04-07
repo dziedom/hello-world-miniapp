@@ -6,14 +6,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 const frameMetadata = {
   version: "next",
-  imageUrl: "/images/image_url.png",
+  imageUrl: "https://hello-world-miniapp.vercel.app/images/image_url.png",
   button: {
     title: "🚀 Start",
     action: {
       type: "launch_frame",
       name: "Hello World",
-      url: "http://localhost:3000",
-      splashImageUrl: "/images/splash_image_url.png",
+      url: "https://hello-world-miniapp.vercel.app",
+      splashImageUrl: "https://hello-world-miniapp.vercel.app/images/splash_image_url.png",
       splashBackgroundColor: "#855dcd"
     }
   }
@@ -22,13 +22,13 @@ const frameMetadata = {
 export const metadata: Metadata = {
   title: "Hello World Mini App",
   description: "A simple Hello World Farcaster Mini App",
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://hello-world-miniapp.vercel.app"),
   openGraph: {
     title: "Hello World Mini App",
     description: "A simple Hello World Farcaster Mini App",
     images: [
       {
-        url: "/images/image_url.png",
+        url: "https://hello-world-miniapp.vercel.app/images/image_url.png",
         width: 1200,
         height: 630,
       },
