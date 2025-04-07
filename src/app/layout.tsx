@@ -6,14 +6,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 const frameMetadata = {
   version: "next",
-  imageUrl: "https://hello-world-miniapp.vercel.app/images/image_url.png",
+  imageUrl: "/next.svg",
   button: {
     title: "🚀 Start",
     action: {
       type: "launch_frame",
       name: "Hello World",
       url: "https://hello-world-miniapp.vercel.app",
-      splashImageUrl: "https://hello-world-miniapp.vercel.app/images/splash_image_url.png",
+      splashImageUrl: "/vercel.svg",
       splashBackgroundColor: "#855dcd"
     }
   }
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "A simple Hello World Farcaster Mini App",
     images: [
       {
-        url: "https://hello-world-miniapp.vercel.app/images/image_url.png",
+        url: "/next.svg",
         width: 1200,
         height: 630,
       },
